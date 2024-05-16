@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/jpg" href="./imagenes/lupita.jpg"/>  -->
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
+        <!-- hoja de estilos  -->
+        <link rel="STYLESHEET" href="./css/estilos.css">
+    <title>Formulario de Contacto</title>
+</head>
+
+<body>
+
+    <!-- Agrego un NAV, y dentro de él, agrego un DIV -->
+    <nav>
+        <div>
+
+            <div class="logo">
+                <img src="./imagenes/escudo.png" alt="escudo"  width="60px">
+            </div>
+
+            <!--Estos son los links a las diferentes paginas del site-->
+            <a class="M" href="index.html">Inicio</a>
+            <a class="M" href="fotos.html">Fotos de la Localidad</a>
+            <a class="M" href="obras.html">Obras Públicas</a>
+            <a class="M" href="servicios.html">Servicios</a>
+            <a class="M"href="comercios.html">Comercios</a>
+            <a class="M" href="contacto.html">Contacto</a>
+
+        </div>   
+    </nav>
+
+    <div >
+        <div style="position: relative; width: 100%; height: 100%; height: 80vh; background-position: center; background-size: cover;margin-top: 1em; background-color: rgb(59, 65, 59); background-blend-mode:soft-light;">
+            <img src=".\imagenes\gralperotti.png"  alt="general_perotti" style=" width: 100%; height: 100%; display: block; margin: auto; object-fit: cover; opacity: 70%">
+        </div>
+        
+        <div style="display: inline; padding-top: 0%; background-position: center; background-size: cover; background-color: rgb(59, 65, 59)">
+           
+            <h1 class="contacto-h1">Formulario de Contacto</h1>
+
+            <form class="contacto-formulario" method="get">
+
+                <div>
+                    <label>Tipo de contacto</label>
+                    <select name="contactos" class="contacto-lista">
+                        <option value="Consulta-general">Consulta General</option>
+                        <option value="Denuncia">Denuncia</option>
+                        <option value="Solicitud">Solicitud</option>
+                        <option value="servicio">Publicar un servicio</option>
+                    </select>
+                </div>
+                <br>
+                <div>    
+                    <label>Nombre:</label>   
+                    <input type="text" name="nombre" size="50" maxlength="100">
+                </div>
+                <br>
+                <div>
+                    <label>Telefono:</label>   
+                    <input type="tel" name="telefono" >
+                </div>
+                <br>
+                <div>
+                    <label>e-mail:</label>   
+                    <input type="mail" name="mail" size="50" maxlength="100" value="@">
+                </div>
+                <br>
+                <div>
+                    <label>Mensaje:</label>   
+                    <textarea name="mensaje" rows="10" cols="90"></textarea>
+                </div>
+                <br>
+                <div class="contacto-botones">
+                    <input type="reset" value="Borrar">
+                    <input type="submit" value="Enviar">
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+<div class="alPie">
+    <footer>
+        <a>Desarrollado por Grupo3 para FullStack Python - Comisión 24160</a>
+    </footer>
+</div>
+
+</html>
