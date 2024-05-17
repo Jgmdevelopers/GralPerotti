@@ -28,7 +28,7 @@ HEADER{
 BODY {
     position: absolute;
     height: 100vh;
-    background-image: url(../imagenes/gralperotti.png);
+    background-image: url(../imagenes/fotoPlaza.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -144,6 +144,13 @@ header .nav-bar, header.logo{
     align-items: center;
    
 }
+
+.seccion_titulo{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
 /*fin de codigo de iFrames*/
 
 .contenedorLogo {
@@ -185,8 +192,8 @@ span{
 .section_servicios {
     position: relative;
     width: 100%;
-    height: 150vh;
- 
+    height: 120vh;
+    margin-top: 50px;
  
 }
 
@@ -250,6 +257,7 @@ span{
     position: relative;
     justify-content: center;
     z-index: 888;
+    height: 80vh;
 }
 
 
@@ -268,7 +276,7 @@ span{
 
 .contenedorHistoria h4 {
     margin-top: 0; /* Eliminar margen superior para los títulos */
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .contenedorHistoria_titulo{
@@ -291,7 +299,7 @@ span{
     position: relative;
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 130vh;
     flex-direction: column;
     justify-content: center;
     top: 0;
@@ -419,6 +427,79 @@ span{
     border-radius: 10px;
   
 }
+
+
+.check {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34,50,84,0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  .check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+  }
+  
+  .check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+  }
+  
+  .check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+  }
+  
+  .check:hover:before {
+    opacity: 1;
+  }
+  
+  .check:hover svg {
+    stroke: #4285f4;
+  }
+  
+  #cbx:checked + .check svg {
+    stroke: #4285f4;
+  }
+  
+  #cbx:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+  }
+  
+  #cbx:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+  }
+  
+
+/* fin seccion formulario */
+
 .section2{
     display: flex;
     justify-content: center;
@@ -431,11 +512,13 @@ span{
    
 }
 
+/* footer */
+
 .footer{
     position: relative;
     justify-content: center;
     width: 100%;
-    height: 75vh;
+    height: 70vh;
     color: #fff;
     text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.9); /* Agregar contorno y sombra al texto */
     /* background-color: #fff; */
@@ -475,7 +558,7 @@ span{
 }
 
 .footer_img_perotti{
-    width: 100px;
+    width: 180px;
     margin: 20px;
 }
 
@@ -539,6 +622,11 @@ span{
         width: 3.5rem;
     }
 
+    .section_historia {
+        height: 120vh;
+    }
+
+
     /* seccion servicios */
 
     .section_servicios {
@@ -546,6 +634,7 @@ span{
         align-items: center;
         width: 100%;
         height: fit-content;
+        margin-bottom: 100px;
      
     }
 
@@ -564,7 +653,7 @@ span{
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: fit-content;
+        height: 200vh;
     }
 
     .contenedorTextoFotos{
@@ -581,8 +670,20 @@ span{
     }
 
     .footer{
-        height: 90vh;
+        height: fit-content;
+        padding: 20px;
     }
+    .iconos_footer{
+        top: 50px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center; /* Alinea el contenido del footer al centro */
+        padding: 10px; /* Ajusta el espacio de relleno del footer */
+        margin: 10px; /* Ajusta el espacio de relleno del footer */
+     }
+     
     
     
 }
