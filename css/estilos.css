@@ -435,7 +435,7 @@ span{
 
 
 .footer {
-    position: fixed; /* Fija el footer en la parte inferior de la ventana */
+    position: relative; /* Fija el footer en la parte inferior de la ventana */
     left: 0;
     bottom: 0;
     width: 100%;
@@ -675,7 +675,13 @@ span{
 }
 
 
-@media (max-width: 640px){
+@media (max-width: 767px){
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+        font-size: 14px;
+      }
+
     .contenedorLogo {
         top: 50px;
         padding: 25px;
@@ -712,6 +718,7 @@ span{
         display: flex;
         flex-direction: column;
     }
+
     /* seccion footer */
   .footer {
     display: grid;
