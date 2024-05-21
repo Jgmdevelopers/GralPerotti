@@ -345,53 +345,53 @@ span{
   }
 
 
-/* seccion redes */
 
-.content_redes{
-    background-color: #fff;
+  .content_redes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding: 20px;
-}
-
-.section_redes{
-    
-    position: relative;
+    align-items: center;
+  }
+  
+  .section_redes {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 30vh;
-    }
-
-.item_redes{
+    height: 10vh;
+  }
+  
+  .item_redes {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.item_icono {
-    width: 8vw; 
-    height: 8vh;
-	-moz-transition:all .3s .2s; /*el segundo valor es el delay*/
-	-ms-transition:all .3s .2s; 
-	-o-transition:all .3s .2s; 
-	-webkit-transition:all .3s .2s; 
-	transition: all .3s .2s;
-}
-
-.item_icono:hover {
-    width: 9vw; 
-    height: 9vh;
-	-moz-transform: rotate(360deg) scale(1.2, 1.2) translate(-1px, -1px);
-	-ms-transform: rotate(360deg) scale(1.2, 1.2) translate(-1px, -1px);
-	-o-transform: rotate(360deg) scale(1.2, 1.2) translate(-1px, -1px);
-	-webkit-transform: rotate(360deg) scale(1.2, 1.2) translate(-1px, -1px);
-	transform: rotate(360deg) scale(1.2, 1.2) translate(-1px, -1px);
-}
-
-/* fin seccion redes */
+  }
+  
+  .item_icono {
+    width: 4vw;
+    height: 4vh;
+    -moz-transition: all 0.3s 0.2s; /*el segundo valor es el delay*/
+    -ms-transition: all 0.3s 0.2s;
+    -o-transition: all 0.3s 0.2s;
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+  }
+  
+  .item_icono:hover {
+    width: 6vw;
+    height: 6vh;
+    -moz-transform: rotate(360deg) scale(1.2, 1.2) translate(-1px, -1px);
+    -ms-transform: rotate(360deg) scale(1.2, 1.2) translate(-1px, -1px);
+    -o-transform: rotate(360deg) scale(1.2, 1.2) translate(-1px, -1px);
+    -webkit-transform: rotate(360deg) scale(1.2, 1.2) translate(-1px, -1px);
+    transform: rotate(360deg) scale(1.2, 1.2) translate(-1px, -1px);
+  }
+  
+  /* fin seccion redes */
 
 
 
