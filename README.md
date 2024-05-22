@@ -1,5 +1,3 @@
-### README para el Repositorio del Proyecto General Perotti
-
 # General Perotti - Control y Muestra de Obras y Mejoras
 
 Este repositorio contiene el proyecto desarrollado por el Grupo 3 de la Comisión 24160 del curso Full Stack de Python dictado por Codo a Codo. El proyecto está enfocado en la localidad ficticia de General Perotti, con el objetivo de gestionar y mostrar a los vecinos las obras y mejoras públicas.
